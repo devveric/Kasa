@@ -1,0 +1,19 @@
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 100px;
+}
+
+.header-nav_bloc-img {
+  width: 150px;
+  background-color: #fff;
+}
+
+.header-nav_bloc-img img {
+  width: 100%;
+}
+
+.header-nav_bloc-list {
+  display: flex;
+  column-gap: 60px;
+}

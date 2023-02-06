@@ -1,14 +1,10 @@
-import logo from '../img/logo.png';
 import '../css/App.css';
+import Banner from './Banner';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <Banner />
   );
-}
+};
 
 export default App;

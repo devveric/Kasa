@@ -6,17 +6,15 @@ import '../css/NotFound.css';
 const NotFound = () => {
   return (
     <div>
-      <header>
-        <Navigation />
-      </header>
-      <section className='bloc_section'>
-        <div className='bloc_title-para'>
+      <Navigation />
+      <section className='bloc_notfound-section'>
+        <div className='bloc_notfound-title-para'>
           <h1>
             404
           </h1>
           <p>Oups! La page que vous demandez n'existe pas.</p>
         </div>
-        <div className="bloc_link">
+        <div className="bloc_notfound-link">
           <NavLink to='/'>
             <p>Retourner sur la page d'accueil</p>
           </NavLink>

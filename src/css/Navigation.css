@@ -1,20 +1,34 @@
-.bloc_nav-img {
+.bloc_navigation-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 40px 100px;
 }
 
-.bloc_img {
+.bloc_navigation-img {
   width: 150px;
   background-color: #fff;
 }
 
-.bloc_img img {
+.bloc_navigation-img img {
   width: 100%;
 }
 
-.bloc_links {
+.bloc_navigation-links {
   display: flex;
   column-gap: 60px;
+}
+
+@media (max-width: 767px) {
+  .bloc_navigation-nav {
+    margin: 40px 20px;
+  }
+
+  .bloc_navigation-img {
+    width: 140px;
+  }
+
+  .bloc_navigation-links {
+    column-gap: 10px;
+  }
 }

@@ -1,0 +1,22 @@
+.bloc_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  margin-top: 50px;
+  padding: 60px 0;
+}
+
+.bloc_footer-img img {
+  height: 40px;
+  width: 100px;
+}
+
+.bloc_footer-para {
+  margin-top: 20px;
+}
+
+.bloc_footer-para p {
+  color: #fff;
+  font-size: 24px;
+}

@@ -1,9 +1,13 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 
 const About = () => {
   return (
-    <Navigation />
+    <div>
+      <Navigation />
+      <Footer />
+    </div>
   );
 };
 

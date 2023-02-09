@@ -1,26 +1,22 @@
-.bloc_section {
+.bloc_notfound-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.bloc_title-para {
-  margin-top: 40px;
-}
-
-.bloc_title-para h1 {
+.bloc_notfound-title-para h1 {
   font-size: 288px;
 }
 
-.bloc_title-para p {
+.bloc_notfound-title-para p {
   font-size: 36px;
 }
 
-.bloc_link {
-  margin-top: 120px;
+.bloc_notfound-link {
+  margin: 80px 0;
 }
 
-.bloc_link p {
+.bloc_notfound-link p {
   text-decoration: underline;
 }

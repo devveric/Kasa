@@ -1,0 +1,26 @@
+.bloc_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.bloc_title-para {
+  margin-top: 40px;
+}
+
+.bloc_title-para h1 {
+  font-size: 288px;
+}
+
+.bloc_title-para p {
+  font-size: 36px;
+}
+
+.bloc_link {
+  margin-top: 120px;
+}
+
+.bloc_link p {
+  text-decoration: underline;
+}

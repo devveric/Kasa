@@ -1,19 +1,20 @@
-.header-nav {
+.bloc_nav-img {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 40px 100px;
 }
 
-.header-nav_bloc-img {
+.bloc_img {
   width: 150px;
   background-color: #fff;
 }
 
-.header-nav_bloc-img img {
+.bloc_img img {
   width: 100%;
 }
 
-.header-nav_bloc-list {
+.bloc_links {
   display: flex;
   column-gap: 60px;
 }

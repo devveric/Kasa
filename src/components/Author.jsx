@@ -1,6 +1,7 @@
+// Auteur de l'annonce
 import React from 'react';
 
-const About = () => {
+const Author = () => {
   return (
     <div>
 
@@ -8,4 +9,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Author;

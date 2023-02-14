@@ -1,6 +1,7 @@
+// Filtres
 import React from 'react';
 
-const About = () => {
+const Tags = () => {
   return (
     <div>
 
@@ -8,4 +9,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Tags;

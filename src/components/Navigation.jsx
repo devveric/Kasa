@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../img/logo_header.svg';
-import '../css/Navigation.css';
+import logo from '../assets/img/logo_header.svg';
+import '../style/Navigation.css';
 
 const Navigation = () => {
   return (
@@ -11,10 +11,14 @@ const Navigation = () => {
           <img src={logo} alt="logo kasa" />
         </div>
         <ul className="bloc_navigation-links">
-          <NavLink to='/'>
+          <NavLink to='/' className={({ isActive }) =>
+            isActive ? "nav-active nav-link" : "nav-link"
+          }>
             <li>Accueil</li>
           </NavLink>
-          <NavLink to='/about'>
+          <NavLink to='/about' className={({ isActive }) =>
+            isActive ? "nav-active nav-link" : "nav-link"
+          }>
             <li>À propos</li>
           </NavLink>
         </ul>

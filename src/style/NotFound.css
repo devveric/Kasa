@@ -1,0 +1,59 @@
+.bloc_notfound-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bloc_notfound-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 65px;
+}
+
+.bloc_notfound-img img {
+  width: 600px;
+}
+
+.bloc_notfound-para {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.bloc_notfound-para p {
+  font-size: 36px;
+}
+
+.bloc_notfound-link {
+  margin: 150px 0;
+}
+
+.bloc_notfound-link p {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .bloc_notfound-img {
+    margin: 200px 0 15px;
+  }
+
+  .bloc_notfound-img img {
+    width: 200px;
+  }
+
+  .bloc_notfound-para p {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .bloc_notfound-link {
+    margin: 200px 0 60px;
+  }
+
+  .bloc_notfound-link p {
+    font-size: 14px;
+  }
+}

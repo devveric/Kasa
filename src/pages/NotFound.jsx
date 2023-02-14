@@ -1,18 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Navigation from '../components/Navigation';
-import '../css/NotFound.css';
+import '../style/NotFound.css';
+import notFound404 from '../assets/img/404.svg';
 
 const NotFound = () => {
   return (
     <div>
-      <Navigation />
       <section className='bloc_notfound-section'>
-        <div className='bloc_notfound-title-para'>
-          <h1>
-            404
-          </h1>
-          <p>Oups! La page que vous demandez n'existe pas.</p>
+        <div className='bloc_notfound-img'>
+          <img src={notFound404} alt="texte 404" />
+        </div>
+        <div className='bloc_notfound-para'>
+          <p>Oups! La page que <span>vous demandez n'existe pas.</span></p>
         </div>
         <div className="bloc_notfound-link">
           <NavLink to='/'>

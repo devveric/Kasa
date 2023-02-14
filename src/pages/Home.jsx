@@ -1,18 +1,18 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Navigation from '../components/Navigation';
-import '../css/Home.css';
+import Announcement from '../components/Announcement';
+import '../style/Home.css';
 
 const Home = () => {
   return (
     <div>
-      <Navigation />
       <section className='bloc_home-section'>
         <div className="bloc_home-title">
-          <h1>Chez vous, partout et ailleurs</h1>
+          <h1>Chez vous, <span>partout et ailleurs</span></h1>
+        </div>
+        <div className='bloc_home-announcement'>
+          <Announcement />
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

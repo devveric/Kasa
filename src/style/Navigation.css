@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 100px;
+  margin: 40px 130px 0;
 }
 
 .bloc_navigation-img {
@@ -19,9 +19,13 @@
   column-gap: 60px;
 }
 
+.nav-active {
+  text-decoration: underline;
+}
+
 @media (max-width: 767px) {
   .bloc_navigation-nav {
-    margin: 40px 20px;
+    margin: 20px 20px 10px;
   }
 
   .bloc_navigation-img {

@@ -1,10 +1,10 @@
-import React from 'react';
-import Card from '../models/Card';
+import React from "react";
+import Card from "../models/Card";
 
-const Accomodation = () => {
+const Accomodation = ({ data }) => {
   return (
     <div>
-      <Card />
+      <Card data={data} />
     </div>
   );
 };

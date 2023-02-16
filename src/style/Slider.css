@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px 130px 0;
 }
 
 .bloc_carousel-img {
@@ -13,7 +12,7 @@
 }
 
 .bloc_carousel-img img {
-  position: absolute;
+  /* position: absolute; */
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -35,10 +34,6 @@
 }
 
 @media (max-width: 767px) {
-  .bloc_carousel {
-    margin: 25px 20px 0;
-  }
-
   .bloc_carousel-img {
     height: 255px;
   }

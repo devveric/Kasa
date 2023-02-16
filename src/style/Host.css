@@ -1,6 +1,6 @@
 .bloc_host {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .bloc_host-title {
@@ -28,5 +28,10 @@
 @media (max-width: 767px) {
   .bloc_host-title h1 {
     font-size: 12px;
+  }
+
+  .bloc_host-img {
+    height: 32px;
+    width: 32px;
   }
 }

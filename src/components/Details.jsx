@@ -1,11 +1,16 @@
-// Titre et sous-titre de "accomodation"
 import React from 'react';
+import '../style/Details.css';
 
-const Details = () => {
+const Details = ({ data }) => {
   return (
-    <div>
-
-    </div>
+    <section className='bloc_details'>
+      <div className='bloc_details-title'>
+        <h1>{data.title}</h1>
+      </div>
+      <div className='bloc_details-description'>
+        <h2>{data.location}</h2>
+      </div>
+    </section>
   );
 };
 

@@ -1,0 +1,32 @@
+.bloc_host {
+  display: flex;
+  /* align-items: center; */
+}
+
+.bloc_host-title {
+  display: flex;
+  margin-left: 1%;
+}
+
+.bloc_host-title h1 {
+  text-align: end;
+  font-size: 18px;
+}
+
+.bloc_host-img {
+  height: 64px;
+  width: 64px;
+  margin-left: 10px;
+}
+
+.bloc_host-img img {
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .bloc_host-title h1 {
+    font-size: 12px;
+  }
+}

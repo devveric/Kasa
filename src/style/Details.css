@@ -1,0 +1,24 @@
+.bloc_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc_details-title h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.bloc_details-description h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .bloc_details h1 {
+    font-size: 18px;
+  }
+
+  .bloc_details h2 {
+    font-size: 14px;
+  }
+}

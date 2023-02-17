@@ -1,0 +1,21 @@
+.bloc_about {
+  margin: 45px 130px 0;
+}
+
+.bloc_about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 223px;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/img/mountain.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}

@@ -2,26 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../style/Announcement.css';
 
-const Announcement = ({ data }) => {
+const Announcement = ({ props }) => {
   return (
-    <div className="container_announcement">
+    <section className="container_announcement">
       {
-        data.map((list) => (
-          <div key={list.id} className="bloc_announcement">
+        props.map((list, i) => (
+          <article key={i} className="bloc_announcement">
             <Link to={`/${list.id}`}>
-              <article className="bloc_announcement-img">
+              <figure className="bloc_announcement-img">
                 <img src={list.cover} alt="annonces" />
-                <figure className="bloc_announcement-title">
+                <figcaption className="bloc_announcement-title">
                   <h2>
                     {list.title}
                   </h2>
-                </figure>
-              </article>
+                </figcaption>
+              </figure>
             </Link>
-          </div>
+          </article>
         ))
       }
-    </div>
+    </section>
   );
 };
 

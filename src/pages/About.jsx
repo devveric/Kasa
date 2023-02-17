@@ -1,10 +1,14 @@
 import React from 'react';
+import Collapse from '../components/Collapse';
+import '../style/About.css';
 
-const About = () => {
+const About = (props) => {
   return (
-    <div>
-
-    </div>
+    <section className='bloc_about'>
+      <div className='bloc_about-img'>
+      </div>
+      <Collapse data={props} />
+    </section>
   );
 };
 

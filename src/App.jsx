@@ -7,18 +7,20 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 import Accomodation from './pages/Accomodation';
-import accomodations from './data/Data';
+import DataList from './data/DataList';
+import CollapseData from './data/CollapseData';
 
 const App = () => {
-  const data = accomodations;
+  const propsList = DataList;
+  const propsCol = CollapseData;
   return (
     <div>
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path='/' element={<Home data={data} />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/:id' element={<Accomodation data={data} />} />
+          <Route path='/' element={<Home data={propsList} />} />
+          <Route path='/about' element={<About data={propsCol} />} />
+          <Route path='/:id' element={<Accomodation data={propsList} />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Footer />

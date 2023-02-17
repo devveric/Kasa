@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "../models/Card";
 
-const Accomodation = ({ data }) => {
+const Accomodation = ({ props }) => {
   return (
-    <div>
-      <Card data={data} />
-    </div>
+    <section>
+      <Card data={props} />
+    </section>
   );
 };
 

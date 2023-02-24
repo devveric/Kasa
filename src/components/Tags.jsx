@@ -1,14 +1,11 @@
 import React from 'react';
 import '../style/Tags.css';
 
-const Tags = ({ props }) => {
+const Tags = ({ filters }) => {
   return (
     <section className='bloc_tags'>
       <div className="bloc_tags_para">
-        <p>{props.tags[0]}</p>
-      </div>
-      <div className="bloc_tags_para">
-        <p>{props.tags[1]}</p>
+        <p>{filters}</p>
       </div>
     </section>
   );

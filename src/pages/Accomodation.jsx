@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../models/Card";
+import { Card } from "../config";
 
-const Accomodation = ({ props }) => {
+const Accomodation = () => {
   return (
     <section>
-      <Card data={props} />
+      <Card />
     </section>
   );
 };

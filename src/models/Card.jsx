@@ -1,37 +1,44 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { Navigate, useParams } from "react-router-dom";
+import { Slider, Details, Host, Tags, Rating } from '../config';
+import dataList from "../data/DataList.json";
 import '../style/Card.css';
-import NotFound from '../pages/NotFound';
-import Details from '../components/Details';
-import Slider from '../components/Slider';
-// import Host from '../components/Host';
-import Tags from '../components/Tags';
-import Rating from '../components/Rating';
 
-const Card = ({ props }) => {
+const Card = () => {
   const { id } = useParams();
-  const paramsId = props.find((select) => select.id === id);
-  if (paramsId) {
-    return (
-      <div className="bloc_card">
-        <Slider data={paramsId} />
-        <div className="bloc_details-host">
-          <Details data={props} />
-          {/* <Host data={props} /> */}
+  const data = dataList.find(data => data.id === id);
+  const { pictures, host, tags, rating } = data;
+
+  if (data === undefined) {
+    return <Navigate to='*' />;
+  }
+  return (
+    <Fragment>
+      <div className="container_card">
+        <div className="bloc_card-pictures">
+          <Slider pictures={pictures} />
         </div>
-        <div className="bloc_tags-rating">
-          <Tags data={props[1]} />
-          <Rating />
+        <div className="bloc_card">
+          <div className="bloc_details-host-rating">
+            <div className="bloc_details">
+              <Details locations={data} />
+            </div>
+            <div className="bloc_details-host">
+              <Host author={host} />
+              <Rating string={rating} />
+            </div>
+          </div>
+          <div className="bloc_tags-rating">
+            {
+              tags.map((tag, index) => {
+                return <Tags filters={tag} key={index} />;
+              })
+            }
+          </div>
         </div>
       </div>
-    );
-  } else {
-    return (
-      <>
-        <NotFound />
-      </>
-    );
-  }
+    </Fragment >
+  );
 };
 
 export default Card;

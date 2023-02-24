@@ -1,35 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
+import arrowLeft from '../assets/img/arrow_left.svg';
+import arrowRight from '../assets/img/arrow_right.svg';
 import '../style/Slider.css';
 
-const Slider = ({ props }) => {
-  const display = (props) => {
-    switch (props) {
-      case props.pictures[0]:
-        <img src={props.pictures[0]} alt="Interieur 1" />;
-        break;
-      case props.pictures[1]:
-        <img src={props.pictures[1]} alt="Interieur 2" />;
-        break;
-      case props.pictures[2]:
-        <img src={props.pictures[2]} alt="Interieur 3" />;
-        break;
-      case props.pictures[3]:
-        <img src={props.pictures[3]} alt="Interieur 4" />;
-        break;
-      case props.pictures[4]:
-        <img src={props.pictures[4]} alt="Interieur 5" />;
-        break;
-      default:
-        return null;
+const Slider = ({ pictures }) => {
+  const [count, setCount] = useState(0);
+
+  const previousPictures = () => {
+    if (count === 0) {
+      setCount(pictures.length - 1);
+    } else {
+      setCount(count - 1);
     }
   };
+
+  const nextPictures = () => {
+    if (count === pictures.length - 1) {
+      setCount(0);
+    } else {
+      setCount(count + 1);
+    }
+  };
+
+
+  const arrowDisplayLeft = () => {
+    if (pictures.length !== 1) {
+      return (
+        <img onClick={previousPictures} src={arrowLeft} alt="Flèche gauche" />
+      );
+    }
+  };
+
+  const arrowDisplayRight = () => {
+    if (pictures.length !== 1) {
+      return (
+        <img onClick={nextPictures} src={arrowRight} alt="Flèche droite" />
+      );
+    }
+  };
+
   return (
-    <section className='bloc_carousel'>
-      <div className='bloc_carousel-img'>
-        {display(props)};
-      </div>
-      <div className="bloc_digital">
-        <h3>1/5</h3>
+    <section className='bloc_section-slider'>
+      <div className="bloc_carousel">
+        <div id='arrowLeft' className="bloc_arrow-left">
+          {arrowDisplayLeft()}
+        </div>
+        <div className="bloc_slider-pictures">
+          <img src={pictures[count]} alt="Carousel" />
+          <p className="digital">{count + 1}/{pictures.length}</p>
+        </div>
+        <div className="bloc_arrow-right">
+          {arrowDisplayRight()}
+        </div>
       </div>
     </section>
   );

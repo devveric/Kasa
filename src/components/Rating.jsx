@@ -1,31 +1,24 @@
 import React from 'react';
+import { starEmpty } from '../config';
 import '../style/Rating.css';
-import star_full from '../assets/img/star_full.svg';
-import star_empty from '../assets/img/star_empty.svg';
 
-const Rating = () => {
-  const fullStars = Array(5).fill(<img src={star_full} alt="Étoile rempli" />);
-  const emptyStars = Array(5).fill(<img src={star_empty} alt="Étoile vide" />);
+const Rating = ({ string }) => {
+  const number = parseInt(string);
+  const array = ` ${starEmpty}`.repeat(number).split(' ');
+  const stars = array.splice(array.length - 5);
+
+  const starActive = () => {
+  };
+
   return (
-    <section className='bloc_rating'>
-      <div className="bloc_rating-full">
-        {
-          fullStars.map((stars, i) => (
-            <div key={i}>
-              {stars}
-            </div>
-          ))
-        }
-      </div>
-      <div className="bloc_rating-empty">
-        {
-          emptyStars.map((stars, i) => (
-            <div key={i}>
-              {stars}
-            </div>
-          ))
-        }
-      </div>
+    <section className="bloc_rating-img">
+      {
+        stars.map((star, index) => {
+          return (
+            <img onClick={starActive} key={index} src={star.toString()} alt="Étoile vide" />
+          );
+        })
+      }
     </section>
   );
 };

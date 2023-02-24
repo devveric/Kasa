@@ -1,16 +1,17 @@
-.bloc_card {
+.container_card {
   margin: 20px 130px 0;
 }
 
-.bloc_details-host {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+.bloc_card-pictures {
+  margin: 20px 0;
 }
 
-.bloc_tags-rating {
+.bloc_details-host-rating {
   display: flex;
   justify-content: space-between;
+}
+
+.bloc_details-host {
 }
 
 @media (max-width: 767px) {

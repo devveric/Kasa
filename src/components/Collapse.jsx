@@ -1,9 +1,9 @@
 // Menu ouverture fermeture (description, etc.)
 import React, { useState } from 'react';
+import { arrowCollapse } from '../config';
 import '../style/Collapse.css';
-import arrow from '../assets/img/arrow.svg';
 
-const Collapse = (props) => {
+const Collapse = () => {
   const [open, setOPen] = useState(false);
   const toggle = () => {
     setOPen(!open);
@@ -12,11 +12,11 @@ const Collapse = (props) => {
   return (
     <div>
       <div onClick={toggle()} className="bloc_about-reliability">
-        <p>{props.names}</p>
-        <img id='arrow' src={arrow} alt="Flèche" />
+        <p></p>
+        <img id='arrow' src={arrowCollapse} alt="Flèche" />
       </div>
       {open && <div className="bloc_collapse-description">
-        <p>{props.conditions}</p>
+        <p></p>
       </div>}
     </div>
   );

@@ -29,6 +29,17 @@
   font-weight: 500;
 }
 
+.bloc_home-announcement {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin: 43px 0 0;
+  padding: 60px 0;
+  border-radius: 25px;
+}
+
 @media (max-width: 767px) {
   .bloc_home-section {
     margin: 0 20px;

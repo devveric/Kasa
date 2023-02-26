@@ -1,21 +1,18 @@
 import React from 'react';
-import { starEmpty } from '../config';
+import { starFull } from '../config';
 import '../style/Rating.css';
 
 const Rating = ({ string }) => {
-  const number = parseInt(string);
-  const array = ` ${starEmpty}`.repeat(number).split(' ');
-  const stars = array.splice(array.length - 5);
-
-  const starActive = () => {
-  };
+  const array = ` ${starFull}`.repeat(5).split(' ');
+  const starsFull = array.splice(array.length - 5);
+  console.log(starsFull);
 
   return (
     <section className="bloc_rating-img">
       {
-        stars.map((star, index) => {
+        starsFull.map((star, index) => {
           return (
-            <img onClick={starActive} key={index} src={star.toString()} alt="Étoile vide" />
+            <img className={index < string ? "" : 'stars_empty'} key={index} src={star.toString()} alt="Étoiles pleines" />
           );
         })
       }
@@ -23,4 +20,4 @@ const Rating = ({ string }) => {
   );
 };
 
-export default Rating;
+export default Rating;;

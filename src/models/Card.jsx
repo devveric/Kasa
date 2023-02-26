@@ -19,21 +19,25 @@ const Card = () => {
           <Slider pictures={pictures} />
         </div>
         <div className="bloc_card">
-          <div className="bloc_details-host-rating">
-            <div className="bloc_details">
+          <div className="bloc_details-host">
+            <div>
               <Details locations={data} />
             </div>
-            <div className="bloc_details-host">
+            <div>
               <Host author={host} />
-              <Rating string={rating} />
             </div>
           </div>
           <div className="bloc_tags-rating">
-            {
-              tags.map((tag, index) => {
-                return <Tags filters={tag} key={index} />;
-              })
-            }
+            <div className='bloc_card-tags'>
+              {
+                tags.map((tag, index) => {
+                  return <Tags filters={tag} key={index} />;
+                })
+              }
+            </div>
+            <div>
+              <Rating string={rating} />
+            </div>
           </div>
         </div>
       </div>

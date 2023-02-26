@@ -6,12 +6,16 @@
   margin: 20px 0;
 }
 
-.bloc_details-host-rating {
+.bloc_details-host {
   display: flex;
   justify-content: space-between;
 }
 
-.bloc_details-host {
+.bloc_tags-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }
 
 @media (max-width: 767px) {

@@ -9,11 +9,11 @@
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  filter: brightness(0.6);
 }
 
 .bloc_announcement-title {
   display: flex;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
   margin-right: 20px;
   padding: 5px;
   border-radius: 4px;

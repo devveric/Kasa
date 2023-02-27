@@ -58,4 +58,11 @@
     font-size: 24px;
     margin-left: 16px;
   }
+
+  .bloc_home-announcement {
+    background: none;
+    padding: 0;
+    margin: 2px 0;
+    gap: 0;
+  }
 }

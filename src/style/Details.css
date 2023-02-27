@@ -9,12 +9,16 @@
 }
 
 .bloc_details-description h2 {
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
 }
 
 @media (max-width: 767px) {
+  .bloc_details {
+    margin-top: 0px;
+  }
+
   .bloc_details h1 {
     font-size: 18px;
   }

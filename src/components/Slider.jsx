@@ -26,7 +26,7 @@ const Slider = ({ pictures }) => {
   const arrowDisplayLeft = () => {
     if (pictures.length !== 1) {
       return (
-        <img onClick={previousPictures} src={arrowLeft} alt="Flèche gauche" />
+        <img className='slider_arrow-left' onClick={previousPictures} src={arrowLeft} alt="Flèche gauche" />
       );
     }
   };
@@ -34,7 +34,7 @@ const Slider = ({ pictures }) => {
   const arrowDisplayRight = () => {
     if (pictures.length !== 1) {
       return (
-        <img onClick={nextPictures} src={arrowRight} alt="Flèche droite" />
+        <img className='slider_arrow-right' onClick={nextPictures} src={arrowRight} alt="Flèche droite" />
       );
     }
   };
@@ -42,7 +42,7 @@ const Slider = ({ pictures }) => {
   return (
     <section className='bloc_section-slider'>
       <div className="bloc_carousel">
-        <div id='arrowLeft' className="bloc_arrow-left">
+        <div className="bloc_arrow-left">
           {arrowDisplayLeft()}
         </div>
         <div className="bloc_slider-pictures">

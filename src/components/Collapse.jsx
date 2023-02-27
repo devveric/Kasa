@@ -3,8 +3,10 @@ import React, { useState } from 'react';
 import { arrowCollapse } from '../config';
 import '../style/Collapse.css';
 
-const Collapse = () => {
+const Collapse = ({ content }) => {
   const [open, setOPen] = useState(false);
+  const { name, description } = content;
+
   const toggle = () => {
     setOPen(!open);
   };
@@ -12,11 +14,11 @@ const Collapse = () => {
   return (
     <div>
       <div onClick={toggle()} className="bloc_about-reliability">
-        <p></p>
+        <p>{name}</p>
         <img id='arrow' src={arrowCollapse} alt="Flèche" />
       </div>
       {open && <div className="bloc_collapse-description">
-        <p></p>
+        <p>{description}</p>
       </div>}
     </div>
   );

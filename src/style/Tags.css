@@ -30,5 +30,6 @@
 
   .bloc_tags_para p {
     font-size: 10px;
+    padding: 4px 0 2px;
   }
 }

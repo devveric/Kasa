@@ -5,7 +5,6 @@ import '../style/Rating.css';
 const Rating = ({ string }) => {
   const array = ` ${starFull}`.repeat(5).split(' ');
   const starsFull = array.splice(array.length - 5);
-  console.log(starsFull);
 
   return (
     <section className="bloc_rating-img">

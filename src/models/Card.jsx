@@ -7,11 +7,13 @@ import '../style/Card.css';
 const Card = () => {
   const { id } = useParams();
   const data = dataList.find(data => data.id === id);
-  const { pictures, host, tags, rating, description } = data;
 
   if (data === undefined) {
     return <Navigate to='*' />;
   }
+
+  const { pictures, host, tags, rating, description, equipments } = data;
+
   return (
     <Fragment>
       <div className="container_card">
@@ -39,8 +41,13 @@ const Card = () => {
               <Rating string={rating} />
             </div>
           </div>
-          <div className="bloc_collapse">
+        </div>
+        <div className='container_card-collapse'>
+          <div className="bloc_card-collapse">
             <Collapse content={{ name: "Description", description: description }} />
+          </div>
+          <div className="bloc_card-collapse">
+            <Collapse content={{ name: "Équipements", equipments: equipments }} />
           </div>
         </div>
       </div>

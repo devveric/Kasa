@@ -4,10 +4,10 @@
 }
 
 .stars_empty {
-  filter: grayscale() opacity(0.2);
+  filter: grayscale() opacity(0.4);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bloc_rating-img img {
     width: 15px;
     height: 15px;

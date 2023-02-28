@@ -1,5 +1,10 @@
-.bloc_about {
+.container_about {
   margin: 45px 130px 0;
+}
+
+.bloc_about-collapse {
+  width: 1023px;
+  margin: 0 auto;
 }
 
 .bloc_about-img {
@@ -18,4 +23,14 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .container_about {
+    margin: 45px 20px 0;
+  }
+
+  .bloc_about-collapse {
+    width: 335px;
+  }
 }

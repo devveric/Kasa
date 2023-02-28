@@ -33,7 +33,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bloc_notfound-img {
     margin: 200px 0 15px;
   }

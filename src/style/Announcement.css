@@ -27,7 +27,7 @@
   color: #fff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .container_announcement {
     background-color: #fff;
     flex-direction: column;

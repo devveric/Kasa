@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import propTypes from "prop-types";
 import "../style/Announcement.css";
 
 
@@ -22,14 +21,6 @@ const Announcement = ({ data }) => {
       </article>
     </section>
   );
-};
-
-Announcement.propTypes = {
-  location: propTypes.shape({
-    id: propTypes.string,
-    title: propTypes.string,
-    cover: propTypes.string
-  })
 };
 
 export default Announcement;

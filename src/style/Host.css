@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bloc_host-title h1 {
     font-size: 12px;
   }

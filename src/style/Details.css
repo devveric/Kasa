@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bloc_details {
     margin-top: 0px;
   }

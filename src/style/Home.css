@@ -40,7 +40,7 @@
   border-radius: 25px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .bloc_home-section {
     margin: 0 20px;
   }

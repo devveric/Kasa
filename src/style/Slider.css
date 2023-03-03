@@ -58,7 +58,7 @@
   transform: scale(0.7);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .bloc_slider-pictures {
     height: 225px;
   }

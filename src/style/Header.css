@@ -6,7 +6,7 @@
 }
 
 .bloc_navigation-img {
-  width: 150px;
+  width: 210px;
   background-color: #fff;
 }
 
@@ -19,11 +19,21 @@
   column-gap: 60px;
 }
 
+.bloc_navigation-links li {
+  font-size: 24px;
+}
+
 .nav-active {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  .bloc_navigation-nav {
+    margin: 40px 50px;
+  }
+}
+
+@media (max-width: 767px) {
   .bloc_navigation-nav {
     margin: 20px 20px 10px;
   }
@@ -34,5 +44,9 @@
 
   .bloc_navigation-links {
     column-gap: 10px;
+  }
+
+  .bloc_navigation-links li {
+    font-size: 12px;
   }
 }

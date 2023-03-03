@@ -16,7 +16,6 @@
   display: flex;
   margin-right: 20px;
   padding: 5px;
-  border-radius: 4px;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -27,7 +26,14 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1280px) {
+  .bloc_announcement-img {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
   .container_announcement {
     background-color: #fff;
     flex-direction: column;
@@ -39,5 +45,9 @@
   .bloc_announcement-img {
     height: 255px;
     width: 100%;
+  }
+
+  .bloc_announcement-title {
+    bottom: 15px;
   }
 }

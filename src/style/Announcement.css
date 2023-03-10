@@ -26,7 +26,7 @@
   color: #fff;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .bloc_announcement-img {
     width: 100%;
     margin-top: 50px;
@@ -36,15 +36,13 @@
 @media (max-width: 767px) {
   .container_announcement {
     background-color: #fff;
-    flex-direction: column;
-    gap: 20px 0;
     margin: 22px 0 0;
     padding: 0;
   }
 
   .bloc_announcement-img {
     height: 255px;
-    width: 100%;
+    width: auto;
   }
 
   .bloc_announcement-title {

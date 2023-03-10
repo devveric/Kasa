@@ -1,13 +1,12 @@
-export { default as error404 } from './assets/img/404.svg';
-export { default as arrowCollapse } from './assets/img/arrow_collapse.svg';
-export { default as arrowLeft } from './assets/img/arrow_left.svg';
-export { default as arrowRight } from './assets/img/arrow_right.svg';
-export { default as cliff } from './assets/img/cliff.svg';
-export { default as logoFooter } from './assets/img/logo_footer.svg';
-export { default as logoHeader } from './assets/img/logo_header.svg';
-export { default as mountain } from './assets/img/mountain.svg';
-export { default as starEmpty } from './assets/img/star_empty.svg';
-export { default as starFull } from './assets/img/star_full.svg';
+export { default as error404 } from './assets/img/404.webp';
+export { default as arrowCollapse } from './assets/img/arrow_collapse.webp';
+export { default as arrowLeft } from './assets/img/arrow_left.webp';
+export { default as arrowRight } from './assets/img/arrow_right.webp';
+export { default as cliff } from './assets/img/cliff.webp';
+export { default as logoFooter } from './assets/img/logo_footer.webp';
+export { default as logoHeader } from './assets/img/logo_header.webp';
+export { default as mountain } from './assets/img/mountain.webp';
+export { default as starFull } from './assets/img/star_full.webp';
 
 export { default as Announcement } from './components/Announcement';
 export { default as Collapse } from './components/Collapse';

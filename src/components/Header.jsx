@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/img/logo_header.svg';
+import { logoHeader } from '../config';
 import '../style/Header.css';
 
 const Navigation = () => {
@@ -8,7 +8,7 @@ const Navigation = () => {
     <header>
       <nav className="bloc_navigation-nav">
         <div className="bloc_navigation-img">
-          <img src={logo} alt="logo kasa" />
+          <img src={logoHeader} alt="logo kasa" />
         </div>
         <ul className="bloc_navigation-links">
           <NavLink to='/' className={({ isActive }) =>

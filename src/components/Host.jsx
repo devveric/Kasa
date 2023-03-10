@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/Host.css';
 
 const Host = ({ author }) => {
+  // Je récupère les propriétés de ma liste de données en utilisant le paramètre.
   const { name, picture } = author;
   return (
     <section className='bloc_host'>

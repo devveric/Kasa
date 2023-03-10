@@ -4,6 +4,7 @@ import "../style/Announcement.css";
 
 
 const Announcement = ({ data }) => {
+  // Je récupère les propriétés de ma liste de données en utilisant le paramètre.
   const { id, cover, title } = data;
   return (
     <section className="container_announcement">

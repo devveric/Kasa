@@ -5,13 +5,18 @@ import dataList from "../data/DataList.json";
 import '../style/Card.css';
 
 const Card = () => {
+  // Je récupère le paramètre d'URL.
   const { id } = useParams();
+  // Je cherche l'identifiant de ma liste de données identique au paramètre d'URL.
   const data = dataList.find(data => data.id === id);
 
+  // Je vérifie si la recherche d'identifiant est indéfini.
+  // Dans ce cas, je dirige l'utilisateur sur la page d'erreur.
   if (data === undefined) {
     return <Navigate to='*' />;
   }
 
+  // Je récupère les propriétés de ma liste de données.
   const { pictures, host, tags, rating, description, equipments } = data;
 
   return (

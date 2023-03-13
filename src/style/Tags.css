@@ -5,7 +5,7 @@
 
 .bloc_tags_para {
   background-color: #ff6060;
-  width: 115px;
+  padding: 0 10px;
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -24,7 +24,6 @@
   }
 
   .bloc_tags_para {
-    width: 84px;
     border-radius: 5px;
   }
 

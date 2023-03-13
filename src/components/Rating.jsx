@@ -2,7 +2,7 @@ import React from 'react';
 import { starFull } from '../config';
 import '../style/Rating.css';
 
-const Rating = ({ string }) => {
+const Rating = ({ rates }) => {
   // Je répète 5 fois l'étoile, puis transforme en tableau.
   const array = ` ${starFull}`.repeat(5).split(' ');
   // Étant en string, je retire le 5ème index pour supprimer les guillemets.
@@ -13,7 +13,7 @@ const Rating = ({ string }) => {
       {
         starsFull.map((star, index) => {
           return (
-            <img className={index < string ? "" : 'stars_empty'} key={index} src={star.toString()} alt="Étoiles" />
+            <img className={index < rates ? '' : 'stars_empty'} key={index} src={star.toString()} alt="Étoiles" />
           );
         })
       }

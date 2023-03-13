@@ -9,7 +9,7 @@ const Slider = ({ pictures }) => {
    * Ce hook renvoie un tableau avec deux valeurs.
    * Déclaration d'une nouvelle variable d'état que j'appel "count".
    * Déclaration de la variable qui met à jour la variable d'état en remplaçant sa valeur, que j'appel "setCount".
-   * Comportement de "useState" mis à "0" par défaut.
+   * Comportement de "useState" mis à 0 par défaut.
   */
   const [count, setCount] = useState(0);
 

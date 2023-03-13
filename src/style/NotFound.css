@@ -47,6 +47,16 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .bloc_notfound-img {
+    margin: 250px 0 65px;
+  }
+
+  .bloc_notfound-link {
+    min-height: 190px;
+  }
+}
+
 @media (max-width: 767px) {
   .bloc_notfound-img {
     margin: 200px 0 15px;
@@ -64,7 +74,7 @@
   }
 
   .bloc_notfound-link {
-    margin: 200px 0 60px;
+    margin: 130px 0 19px;
   }
 
   .bloc_notfound-link p {

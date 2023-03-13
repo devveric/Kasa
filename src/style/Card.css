@@ -1,5 +1,5 @@
 .container_card {
-  margin: 20px 130px 0;
+  margin: 20px 100px 0;
 }
 
 .container_card_without-slider {
@@ -34,6 +34,12 @@
   }
   .bloc_card-collapse {
     margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 1024px) {
+  .container_card-collapse {
+    min-height: 419px;
   }
 }
 
@@ -77,6 +83,6 @@
   }
 
   .bloc_card-collapse {
-    width: 335px;
+    width: 100%;
   }
 }

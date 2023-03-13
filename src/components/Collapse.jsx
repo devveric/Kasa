@@ -31,8 +31,8 @@ const Collapse = ({ content }) => {
           open && <div className="bloc_collapse-description">
             {
               equipments ?
-                equipments.map(equipment => {
-                  return <p>{equipment}</p>;
+                equipments.map((equipment, index) => {
+                  return <p key={index}>{equipment}</p>;
                 })
                 : <p>{description}</p>
             }

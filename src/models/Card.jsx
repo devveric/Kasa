@@ -16,7 +16,7 @@ const Card = () => {
     return <Navigate to='*' />;
   }
 
-  // Je récupère les propriétés de ma liste de données.
+  // Je décompose ma liste de données.
   const { pictures, host, tags, rating, description, equipments } = data;
 
   return (
@@ -43,7 +43,7 @@ const Card = () => {
               <Host author={host} />
             </div>
             <div className='bloc_card-rating'>
-              <Rating string={rating} />
+              <Rating rates={rating} />
             </div>
           </div>
         </div>

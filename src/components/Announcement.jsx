@@ -4,12 +4,12 @@ import "../style/Announcement.css";
 
 
 const Announcement = ({ data }) => {
-  // Je récupère les propriétés de ma liste de données en utilisant le paramètre.
+  // Je récupère les propriétés de ma liste de données en utilisant la décomposition de la props.
   const { id, cover, title } = data;
   return (
     <section className="container_announcement">
       <article className="bloc_announcement">
-        <Link to={`/${id}`}>
+        <Link to={`/accomodation/${id}`}>
           <figure className="bloc_announcement-img">
             <img src={cover} alt="annonces" />
             <figcaption className="bloc_announcement-title">
